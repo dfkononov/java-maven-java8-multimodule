@@ -1,0 +1,17 @@
+name: java-maven-java8-multimodule
+namespace: ""
+cdPipelineName: ""
+cdPipelineStageName: ""
+dnsWildcard: eks-core.aws.main.edp.projects.epam.com
+framework: java8-multimodule
+
+database:
+  required: false
+
+
+ingress:
+  required: false
+
+image:
+  name: java-maven-java8-multimodule
+  version: latest
