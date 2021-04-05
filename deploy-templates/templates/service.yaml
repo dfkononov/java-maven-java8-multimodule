@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "java-maven-java8-multimodule.fullname" . }}
+  labels:
+    {{- include "java-maven-java8-multimodule.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "java-maven-java8-multimodule.selectorLabels" . | nindent 4 }}
