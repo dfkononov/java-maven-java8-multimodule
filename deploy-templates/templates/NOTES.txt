@@ -1,0 +1,1 @@
+1. Application java-maven-java8-multimodule-import-github-edp-vers has been successfully deployed!!
